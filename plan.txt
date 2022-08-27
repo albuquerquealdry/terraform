@@ -1,0 +1,645 @@
+m1maws_security_group.ssh-acess: Refreshing state... id=sg-fbbab5bc5586e1fe]m
+m1maws_s3_bucket.dev4: Refreshing state... id=hmlbucketdev4]m
+m1maws_instance.dev]: Refreshing state... id=i-fa4fa25e3e45a2]m
+m1maws_instance.dev2]: Refreshing state... id=i-214e3cd48c4a7de2]m
+m1maws_instance.dev1]: Refreshing state... id=i-28d3bea65b218e]m
+m1maws_instance.dev4: Refreshing state... id=i-73ed2c218e61ffd7]m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  m+m create
+m
+Terraform will perform the following actions:
+
+1m  # aws_instance.dev]m will be createdmm
+m  m+mm resource "aws_instance" "dev" {
+      m+m m1mmamimm                          = "ami-8d4ac5b634553e16"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = 
+          m+m m"sg-fbbab5bc5586e1fe",
+        ]
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev1]m will be createdmm
+m  m+mm resource "aws_instance" "dev" {
+      m+m m1mmamimm                          = "ami-8d4ac5b634553e16"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev1"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = 
+          m+m m"sg-fbbab5bc5586e1fe",
+        ]
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev2]m will be createdmm
+m  m+mm resource "aws_instance" "dev" {
+      m+m m1mmamimm                          = "ami-8d4ac5b634553e16"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev2"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = 
+          m+m m"sg-fbbab5bc5586e1fe",
+        ]
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev-secound]m will be createdmm
+m  m+mm resource "aws_instance" "dev-secound" {
+      m+m m1mmamimm                          = "ami-2f341638bdb17fb"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev-secound"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = (known after apply)
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev-secound1]m will be createdmm
+m  m+mm resource "aws_instance" "dev-secound" {
+      m+m m1mmamimm                          = "ami-2f341638bdb17fb"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev-secound1"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = (known after apply)
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev-secound2]m will be createdmm
+m  m+mm resource "aws_instance" "dev-secound" {
+      m+m m1mmamimm                          = "ami-2f341638bdb17fb"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev-secound2"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = (known after apply)
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_instance.dev4m will be createdmm
+m  m+mm resource "aws_instance" "dev4" {
+      m+m m1mmamimm                          = "ami-8d4ac5b634553e16"
+      m+m m1mmarnmm                          = (known after apply)
+      m+m m1mmassociate_public_ip_addressmm  = (known after apply)
+      m+m m1mmavailability_zonemm            = (known after apply)
+      m+m m1mmcpu_core_countmm               = (known after apply)
+      m+m m1mmcpu_threads_per_coremm         = (known after apply)
+      m+m m1mmget_password_datamm            = false
+      m+m m1mmhost_idmm                      = (known after apply)
+      m+m m1mmidmm                           = (known after apply)
+      m+m m1mminstance_statemm               = (known after apply)
+      m+m m1mminstance_typemm                = "t2.micro"
+      m+m m1mmipv6_address_countmm           = (known after apply)
+      m+m m1mmipv6_addressesmm               = (known after apply)
+      m+m m1mmkey_namemm                     = "terraform-aws"
+      m+m m1mmnetwork_interface_idmm         = (known after apply)
+      m+m m1mmoutpost_arnmm                  = (known after apply)
+      m+m m1mmpassword_datamm                = (known after apply)
+      m+m m1mmplacement_groupmm              = (known after apply)
+      m+m m1mmprimary_network_interface_idmm = (known after apply)
+      m+m m1mmprivate_dnsmm                  = (known after apply)
+      m+m m1mmprivate_ipmm                   = (known after apply)
+      m+m m1mmpublic_dnsmm                   = (known after apply)
+      m+m m1mmpublic_ipmm                    = (known after apply)
+      m+m m1mmsecurity_groupsmm              = (known after apply)
+      m+m m1mmsource_dest_checkmm            = true
+      m+m m1mmsubnet_idmm                    = (known after apply)
+      m+m m1mmtagsmm                         = {
+          m+m m"Name" = "dev4"
+        }
+      m+m m1mmtenancymm                      = (known after apply)
+      m+m m1mmvolume_tagsmm                  = (known after apply)
+      m+m m1mmvpc_security_group_idsmm       = 
+          m+m m"sg-fbbab5bc5586e1fe",
+        ]
+
+      m+m mebs_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmsnapshot_idmm           = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+
+      m+m mephemeral_block_device {
+          m+m m1mmdevice_namemm  = (known after apply)
+          m+m m1mmno_devicemm    = (known after apply)
+          m+m m1mmvirtual_namemm = (known after apply)
+        }
+
+      m+m mmetadata_options {
+          m+m m1mmhttp_endpointmm               = (known after apply)
+          m+m m1mmhttp_put_response_hop_limitmm = (known after apply)
+          m+m m1mmhttp_tokensmm                 = (known after apply)
+        }
+
+      m+m mnetwork_interface {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_indexmm          = (known after apply)
+          m+m m1mmnetwork_interface_idmm  = (known after apply)
+        }
+
+      m+m mroot_block_device {
+          m+m m1mmdelete_on_terminationmm = (known after apply)
+          m+m m1mmdevice_namemm           = (known after apply)
+          m+m m1mmencryptedmm             = (known after apply)
+          m+m m1mmiopsmm                  = (known after apply)
+          m+m m1mmkms_key_idmm            = (known after apply)
+          m+m m1mmvolume_idmm             = (known after apply)
+          m+m m1mmvolume_sizemm           = (known after apply)
+          m+m m1mmvolume_typemm           = (known after apply)
+        }
+    }
+
+1m  # aws_s3_bucket.dev4m will be createdmm
+m  m+mm resource "aws_s3_bucket" "dev4" {
+      m+m m1mmacceleration_statusmm         = (known after apply)
+      m+m m1mmaclmm                         = "private"
+      m+m m1mmarnmm                         = (known after apply)
+      m+m m1mmbucketmm                      = "hmlbucketdev4"
+      m+m m1mmbucket_domain_namemm          = (known after apply)
+      m+m m1mmbucket_regional_domain_namemm = (known after apply)
+      m+m m1mmforce_destroymm               = false
+      m+m m1mmhosted_zone_idmm              = (known after apply)
+      m+m m1mmidmm                          = (known after apply)
+      m+m m1mmregionmm                      = (known after apply)
+      m+m m1mmrequest_payermm               = (known after apply)
+      m+m m1mmtagsmm                        = {
+          m+m m"Name" = "hmlbucketdev4"
+        }
+      m+m m1mmwebsite_domainmm              = (known after apply)
+      m+m m1mmwebsite_endpointmm            = (known after apply)
+
+      m+m mversioning {
+          m+m m1mmenabledmm    = (known after apply)
+          m+m m1mmmfa_deletemm = (known after apply)
+        }
+    }
+
+1m  # aws_security_group.ssh-acess-secoundm will be createdmm
+m  m+mm resource "aws_security_group" "ssh-acess-secound" {
+      m+m m1mmarnmm                    = (known after apply)
+      m+m m1mmdescriptionmm            = "ssh-acess-secound"
+      m+m m1mmegressmm                 = (known after apply)
+      m+m m1mmidmm                     = (known after apply)
+      m+m m1mmingressmm                = 
+          m+m m{
+              m+m mcidr_blocks      = 
+                  m+m m"177.37.174.144/",
+                ]
+              m+m mdescription      = ""
+              m+m mfrom_port        = 22
+              m+m mipv6_cidr_blocks = ]
+              m+m mprefix_list_ids  = ]
+              m+m mprotocol         = "tcp"
+              m+m msecurity_groups  = ]
+              m+m mself             = false
+              m+m mto_port          = 22
+            },
+        ]
+      m+m m1mmnamemm                   = "ssh-acess-secound"
+      m+m m1mmowner_idmm               = (known after apply)
+      m+m m1mmrevoke_rules_on_deletemm = false
+      m+m m1mmtagsmm                   = {
+          m+m m"Name" = "shh"
+        }
+      m+m m1mmvpc_idmm                 = (known after apply)
+    }
+
+m1mPlan:m 9 to add,  to change,  to destroy.
+m33m╷mm
+33m│m m1m33mWarning: mm1mVersion constraints inside provider configuration blocks are deprecatedm
+33m│m m
+33m│m mm  on main.tf line 5, in provider "aws":
+33m│m m   5:     version = 4m"~> 2."mm
+33m│m m
+33m│m mTerraform .13 and earlier allowed provider version constraints inside the provider configuration block, but that is
+33m│m mnow deprecated and will be removed in a future version of Terraform. To silence this warning, move the provider version
+33m│m mconstraint into the required_providers block.
+33m│m m
+33m│m m(and one more similar warning elsewhere)
+33m╵mm
+33m╷mm
+33m│m m1m33mWarning: mm1mQuoted references are deprecatedm
+33m│m m
+33m│m mm  on main.tf line 3, in resource "aws_instance" "dev-secound":
+33m│m m  3:   provider = 4m"aws.secound"mm
+33m│m m
+33m│m mIn this context, references are expected literally rather than in quotes. Terraform .11 and earlier required quotes,
+33m│m mbut quoted references are now deprecated and will be removed in a future version of Terraform. Remove the quotes
+33m│m msurrounding this reference to silence this warning.
+33m│m m
+33m│m m(and one more similar warning elsewhere)
+33m╵mm
+9m
+─────────────────────────────────────────────────────────────────────────────m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
