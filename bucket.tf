@@ -1,5 +1,5 @@
 resource "aws_instance" "dev4" {
-  ami = "ami-08d4ac5b634553e16"
+  ami = var.amis["ubuntu-us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags =  {

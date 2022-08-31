@@ -4,3 +4,4 @@ terraform-aws.pub
 .terraform
 terraform.tfstate
 terraform-aws
+variables.tf
